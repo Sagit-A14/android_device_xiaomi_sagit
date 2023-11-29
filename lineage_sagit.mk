@@ -36,3 +36,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sagit-user 9 PKQ1.190118.001 V11.0.5.0.PCACNXM release-keys"
 
 BUILD_FINGERPRINT := Xiaomi/sagit/sagit:9/PKQ1.190118.001/V11.0.5.0.PCACNXM:user/release-keys
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)

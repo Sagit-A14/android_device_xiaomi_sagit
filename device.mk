@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Inherit from msm8998-common
 $(call inherit-product, device/xiaomi/msm8998-common/msm8998.mk)
 
-PRODUCT_PACKAGES += CertifiedPropsOverlay
+PRODUCT_PACKAGES += CertifiedResOnc
 
 # Permissions
 PRODUCT_COPY_FILES += \

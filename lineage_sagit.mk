@@ -30,37 +30,16 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Device config
-TARGET_HAS_UDFPS := false
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="MSM 8998" \
+    RISING_MAINTAINER="deny2311"
+
 TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# TARGET_BUILD_PACKAGE options:
-# 1 - vanilla (default)
-# 2 - microg
-# 3 - gapps
-TARGET_BUILD_PACKAGE := 3
-
-# TARGET_LAUNCHER options:
-# 1 - stock (default)
-# 2 - lawnchair
-# 3 - pixel (valid only on gapps builds)
-TARGET_LAUNCHER := 3
-
-# GAPPS (valid only for GAPPS builds)
-TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-# TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-# Debugging
-TARGET_INCLUDE_MATLOG := false
-
-# Maintainer
-ALPHA_BUILD_TYPE := Unofficial
-ALPHA_MAINTAINER := deny2311
+PRODUCT_NO_CAMERA := false
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
